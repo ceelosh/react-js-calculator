@@ -1,0 +1,73 @@
+#root{
+    height: 100vh;
+}
+/* CALCULATOR - MAIN */
+.calculator{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* BG DARK*/
+.bg-dark{
+    background-color: #000000;
+}
+/* VIEWER */
+.viewer{
+    height: 10vh;
+    text-align: right;
+    font-size: 3rem;
+    color: white;
+}
+
+.controller{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+
+.controller .basic{
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+.controller .basic > .fast-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+.controller .basic > .fast-menu button{
+    width: calc(100%/3);
+    height: calc(90vh/5);
+}
+
+.controller .basic > .keyboard-numbers{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.controller .basic > .keyboard-numbers button{
+    width: calc(100%/3);
+    background-color: #585858;
+}
+
+.controller .operations{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+.controller .operations button{
+    width: 100%;
+    height: calc(100%/5);
+}
+/* BTN */
+.btn{
+    border-radius: 15px;
+    border: 1px solid black;
+    font-size: 3rem;
+}
